@@ -65,7 +65,7 @@ export default {
 .personalContainer {
   .personalBackground {
     height: 300px;
-    background-color: blue;
+    background-color: yellowgreen;
     .topContent {
       margin: auto;
       text-align: center;

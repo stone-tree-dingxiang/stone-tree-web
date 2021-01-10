@@ -74,10 +74,50 @@
         <i class="el-icon-lollipop">点赞</i>
       </div>
     </div>
+    <!-- 动态内容区域 -->
+    <div class="content">
+      <div class="userBlog">
+        <!-- 头像 -->
+        <div class="userPicture">
+          <img src="../../assets/logo.png" alt="头像" />
+        </div>
+        <!-- 内容 -->
+        <div class="userShares">
+          <div class="blogContent">
+            {{ this.shortBlogContents }}
+            <span class="showopenCloseArticle">
+              <span
+                class="openCloseArticle"
+                @click="openArticle"
+                v-if="showOpenArticle && isArticle"
+                >展开全文 <i class="el-icon-arrow-down"></i
+              ></span>
+              <span
+                class="openCloseArticle"
+                @click="closeArticle"
+                v-if="!showOpenArticle && isArticle"
+                >收起全文 <i class="el-icon-arrow-up"></i
+              ></span>
+            </span>
+          </div>
+          <!-- 头像 -->
+          <div class="blogPicture">
+            <img src="../../assets/home.jpg" alt="博客" />
+          </div>
+        </div>
+      </div>
+      <!-- 按钮区域 -->
+      <div class="bottomButton" v-if="false">
+        <i class="el-icon-star-off">收藏</i>
+        <i class="el-icon-position">转发</i>
+        <i class="el-icon-chat-dot-square">评论</i>
+        <i class="el-icon-lollipop">点赞</i>
+      </div>
+    </div>
   </div>
 </template>
 
-<script>  
+<script>
 export default {
   props: {
     showInput: {
@@ -87,6 +127,7 @@ export default {
   },
   data() {
     return {
+      count: 0,
       // 顶部input区域
       textarea: "",
       // 是否需要做文章的截取
@@ -131,6 +172,9 @@ export default {
     closeArticle() {
       this.showOpenArticle = true;
       this.shortBlogContents = `${this.blogContents.slice(0, 50)}...`;
+    },
+    load() {
+      this.count += 2;
     },
   },
 };

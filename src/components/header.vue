@@ -7,13 +7,13 @@
     ></el-input>
     <div>
       <router-link tag="span" to="homePageContainer" class="topLink"
-        >首页</router-link
+        ><i class="el-icon-s-home"></i> 首页</router-link
       >
       <router-link tag="span" to="personalContainer" class="topLink"
-        >个人中心</router-link
+        ><i class="el-icon-user-solid"></i> 个人中心</router-link
       >
       <router-link tag="span" to="13" class="topLink"
-        >设置</router-link
+        ><i class="el-icon-s-tools"></i> 设置</router-link
       >
     </div>
   </div>
