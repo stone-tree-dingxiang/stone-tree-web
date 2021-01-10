@@ -12,8 +12,6 @@
       <router-link tag="span" to="personalContainer" class="topLink"
         >个人中心</router-link
       >
-      <el-button :to="{ name: homePageContainer }" type="info">首页</el-button>
-      <el-button index="/serContainer" type="info">个人中心</el-button>
     </div>
   </div>
 </template>
@@ -34,6 +32,7 @@ export default {
   align-items: center;
   background-color: #333744;
   border-bottom: 1px solid #fff;
+  padding: 10px;
   .topLink {
     margin: 10px 5px;
     color: red;

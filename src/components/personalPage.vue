@@ -1,7 +1,57 @@
 <template>
-  <el-container style="height: 100vh">
-    首页
-  </el-container>
+  <div class="personalContainer">
+    <!-- 顶部头像区域 -->
+    <div class="personalBackground">
+      <div class="topContent">
+        <img class="userLogo" src="../assets/logo.png" alt="头像" />
+      </div>
+      <div class="topContent">我的名字</div>
+      <div class="topContent">介绍一下自己</div>
+    </div>
+    <!-- 左侧侧边栏 -->
+    <el-container class="persionalSideBar">
+      <el-aside width="200px">
+        <el-menu
+          background-color="#333744"
+          text-color="#fff"
+          active-text-color="#409eff"
+          unique-opened
+          router
+          :default-active="$route.path"
+        >
+          <el-menu-item index="/homePageContainer">
+            <i class="el-icon-menu"></i>
+            <span slot="title">首页</span>
+          </el-menu-item>
+          <el-menu-item index="/qqq">
+            <i class="el-icon-menu"></i>
+            <span slot="title">测试一</span>
+          </el-menu-item>
+          <el-menu-item index="/qq2">
+            <i class="el-icon-menu"></i>
+            <span slot="title">测试二</span>
+          </el-menu-item>
+          <el-menu-item index="/www">
+            <i class="el-icon-menu"></i>
+            <span slot="title">测试三</span>
+          </el-menu-item>
+          <el-menu-item index="/ww2">
+            <i class="el-icon-menu"></i>
+            <span slot="title">测试四</span>
+          </el-menu-item>
+          <el-menu-item index="/eee">
+            <i class="el-icon-menu"></i>
+            <span slot="title">测试五</span>
+          </el-menu-item>
+          <el-menu-item index="/ee2">
+            <i class="el-icon-menu"></i>
+            <span slot="title">测试六</span>
+          </el-menu-item>
+        </el-menu>
+      </el-aside>
+      <router-view></router-view>
+    </el-container>
+  </div>
 </template>
 
 <script>
@@ -10,13 +60,24 @@ export default {
     return {};
   },
   created() {},
-  mounted() {
-
-  },
+  mounted() {},
   methods: {},
 };
 </script>
 
 <style lang="less" scoped>
-
+.personalContainer {
+  .personalBackground {
+    height: 300px;
+    background-color: blue;
+    .topContent {
+      margin: auto;
+      text-align: center;
+      .userLogo {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
 </style>

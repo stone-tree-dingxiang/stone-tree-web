@@ -1,5 +1,5 @@
 <template>
-  <el-container class="zmain">
+  <el-container class="homeSideBar">
     <el-aside width="200px">
       <el-menu
         background-color="#333744"
@@ -7,7 +7,8 @@
         active-text-color="#409eff"
         unique-opened
         router
-        :default-active="$route.path"      >
+        :default-active="$route.path"
+      >
         <el-menu-item index="/homePageContainer">
           <i class="el-icon-menu"></i>
           <span slot="title">首页</span>
@@ -38,9 +39,7 @@
         </el-menu-item>
       </el-menu>
     </el-aside>
-    <el-main>
-      <router-view></router-view>
-    </el-main>
+    <router-view></router-view>
   </el-container>
 </template>
 

@@ -1,7 +1,13 @@
 <template>
-  <el-container style="height: 100vh">
-    首页
-  </el-container>
+  <div class="personalContainer">
+    <div class="personalBackground">
+      <div>
+        <img src="../../assets/logo.png" alt="头像" />
+      </div>
+      <div>我的名字</div>
+      <div>介绍一下自己</div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -10,13 +16,15 @@ export default {
     return {};
   },
   created() {},
-  mounted() {
-
-  },
+  mounted() {},
   methods: {},
 };
 </script>
 
 <style lang="less" scoped>
-
+.personalContainer {
+  .personalBackground {
+    height: 300px;
+  }
+}
 </style>

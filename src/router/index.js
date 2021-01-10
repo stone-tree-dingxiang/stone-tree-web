@@ -31,10 +31,11 @@ Vue.use(VueRouter)
     ]
     },
     {
-      path: 'personalPage',
+      path: '/personalContainer',
       component: PersonalPage,
       children: [
-        {path:'/personalContainer',name:'personalContainer',component:PersonalContainer}
+        // 内容模板暂时和首页使用相同的
+         {path: '/personalContainer',name:'personalContainer', component: HomePageContainer},
       ]
     }
   
