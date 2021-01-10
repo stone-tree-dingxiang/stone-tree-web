@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <BlogHeader class="mainContent"></BlogHeader>
+    <!-- <BlogHeader class="mainContent"></BlogHeader> -->
     <router-view></router-view>
   </div>
 </template>
@@ -23,6 +23,5 @@ body {
   height: 100%;
   margin: auto;
   width: 920px;
-  /* padding: 0 calc(100% - 460px); */
 }
 </style>
