@@ -10,7 +10,7 @@
     </div>
     <!-- 左侧侧边栏 -->
     <el-container class="persionalSideBar">
-      <el-aside width="200px">
+      <el-aside width="200px" class="leftSideBar">
         <el-menu
           background-color="#333744"
           text-color="#fff"
@@ -19,33 +19,29 @@
           router
           :default-active="$route.path"
         >
-          <el-menu-item index="/homePageContainer">
+          <el-menu-item index="/personalContainer">
             <i class="el-icon-menu"></i>
-            <span slot="title">首页</span>
+            <span slot="title">动态</span>
           </el-menu-item>
-          <el-menu-item index="/qqq">
+          <el-menu-item index="/personalArticle">
             <i class="el-icon-menu"></i>
-            <span slot="title">测试一</span>
+            <span slot="title">文章</span>
           </el-menu-item>
-          <el-menu-item index="/qq2">
+          <el-menu-item index="/personalPicture">
             <i class="el-icon-menu"></i>
-            <span slot="title">测试二</span>
+            <span slot="title">相册</span>
           </el-menu-item>
-          <el-menu-item index="/www">
+          <el-menu-item index="/focusEmptyContent">
             <i class="el-icon-menu"></i>
-            <span slot="title">测试三</span>
+            <span slot="title">关注</span>
           </el-menu-item>
-          <el-menu-item index="/ww2">
+          <el-menu-item index="/fansEmptyContent">
             <i class="el-icon-menu"></i>
-            <span slot="title">测试四</span>
+            <span slot="title">粉丝</span>
           </el-menu-item>
-          <el-menu-item index="/eee">
+          <el-menu-item index="/collectEmptyContent">
             <i class="el-icon-menu"></i>
-            <span slot="title">测试五</span>
-          </el-menu-item>
-          <el-menu-item index="/ee2">
-            <i class="el-icon-menu"></i>
-            <span slot="title">测试六</span>
+            <span slot="title">收藏</span>
           </el-menu-item>
         </el-menu>
       </el-aside>
@@ -78,6 +74,9 @@ export default {
         height: 100px;
       }
     }
+  }
+  .persionalSideBar {
+    margin-top: 10px;
   }
 }
 </style>

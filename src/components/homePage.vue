@@ -1,6 +1,6 @@
 <template>
   <el-container class="homeSideBar">
-    <el-aside width="200px">
+    <el-aside width="200px" v-if="false">
       <el-menu
         background-color="#333744"
         text-color="#fff"
@@ -13,19 +13,19 @@
           <i class="el-icon-menu"></i>
           <span slot="title">首页</span>
         </el-menu-item>
-        <el-menu-item index="/qqq">
+        <el-menu-item index="/emptyContent">
           <i class="el-icon-menu"></i>
           <span slot="title">测试一</span>
         </el-menu-item>
-        <el-menu-item index="/qq2">
+        <el-menu-item index="/emptyContent">
           <i class="el-icon-menu"></i>
           <span slot="title">测试二</span>
         </el-menu-item>
-        <el-menu-item index="/www">
+        <el-menu-item index="/emptyContent">
           <i class="el-icon-menu"></i>
           <span slot="title">测试三</span>
         </el-menu-item>
-        <el-menu-item index="/ww2">
+        <el-menu-item index="/emptyContent">
           <i class="el-icon-menu"></i>
           <span slot="title">测试四</span>
         </el-menu-item>
@@ -33,7 +33,7 @@
           <i class="el-icon-menu"></i>
           <span slot="title">测试五</span>
         </el-menu-item>
-        <el-menu-item index="/ee2">
+        <el-menu-item index="/emptyContent">
           <i class="el-icon-menu"></i>
           <span slot="title">测试六</span>
         </el-menu-item>
