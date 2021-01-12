@@ -25,9 +25,20 @@ export default {
   created() {},
   mounted() {},
   methods: {
-    login(){
-      alert("点击登录")
-    }
+    login() {
+      const params = this.$qs.stringify({
+        mobile: 17626048083,
+        password: 123456,
+      });
+      this.$axios.get("http://192.168.31.118/tree/stoneUser/selectAll");
+      this.$axios
+        .post("http://192.168.31.118/tree/stoneUser/login", params, 
+        {
+          headers: { "Content-Type": "application/json" },
+        })
+        .then((res) => {          
+        })
+    },
   },
 };
 </script>

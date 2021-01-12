@@ -44,9 +44,9 @@ const routes = [
   },
   // 个人中心
   {
-      path: '/personalContainer',
-      component: Home,
-      children: [{
+    path: '/personalContainer',
+    component: Home,
+    children: [{
         path: '/personalPage',
         component: PersonalPage,
         children: [
